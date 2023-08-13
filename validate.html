@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <center><p><b>KAMARAJ COLLEGE OF ENGINEERING AND TECHNOLOGY</b></p><center>
+	<img src="aboutme.jpg" height="300px" width="300px" alt="profile"><br><br>
+    <div class="container">
+        <form onsubmit="return validateForm()" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+            <p id="error-msg" class="error-message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
